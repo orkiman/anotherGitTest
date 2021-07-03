@@ -10,9 +10,7 @@ public class Test {
 
         }
         List<Cell> list = Collections.synchronizedList(new ArrayList<>());
-        for (int i = 0; i < 4; i++) {
-            list.add(new Cell(i));
-        }
+        for (int i = 0; i < 4; i++) {list.add(new Cell(i));}
         for (int i = 0; i < 4; i++) {System.out.print((list.get(i)).num);}System.out.println();
         Collections.rotate(list,1);
         for (int i = 0; i < 4; i++) {System.out.print((list.get(i)).num);}System.out.println();
@@ -22,8 +20,8 @@ public class Test {
         for (int i = 0; i < 4; i++) {System.out.print((list.get(i)).num);}System.out.println();
         Cell c=list.get(0);
         Collections.rotate(list,1);
-//        first commit from win pc - changed number to 9
-        c.num=9;
+//        second commit from fedora - changed number to 5
+        c.num=5;
         for (int i = 0; i < 4; i++) {System.out.print((list.get(i)).num);}System.out.println();
 
     }
