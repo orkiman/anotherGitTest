@@ -23,7 +23,6 @@ public class Test {
 //        second commit from fedora - changed number to 5
         c.num=5;
         for (int i = 0; i < 4; i++) {System.out.print((list.get(i)).num);}System.out.println();
-
     }
     public static void main(String[] args) {
         new Test();
