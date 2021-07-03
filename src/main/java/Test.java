@@ -9,7 +9,7 @@ public class Test {
             System.out.println(s);
 
         }
-        List<Cell> list = Collections.synchronizedList(new ArrayList<Cell>());
+        List<Cell> list = Collections.synchronizedList(new ArrayList<>());
         for (int i = 0; i < 4; i++) {
             list.add(new Cell(i));
         }
@@ -22,8 +22,10 @@ public class Test {
         for (int i = 0; i < 4; i++) {System.out.print((list.get(i)).num);}System.out.println();
         Cell c=list.get(0);
         Collections.rotate(list,1);
-        c.num=8;
+//        first commit from win pc - changed number to 9
+        c.num=9;
         for (int i = 0; i < 4; i++) {System.out.print((list.get(i)).num);}System.out.println();
+
     }
     public static void main(String[] args) {
         new Test();
