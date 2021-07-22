@@ -16,14 +16,11 @@ public class Tables {
 // Create a couple of columns
         model.addColumn("Col1");
         model.addColumn("Col2");
-        addToTableButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+        addToTableButton.addActionListener(e -> {
 //                // Append a row
-                model.insertRow(0,new Object[]{counter++,"Or"+counter++});
-                model.setRowCount(5);
+            model.insertRow(0,new Object[]{counter++,"Or"+counter++});
+            model.setRowCount(10);
 
-            }
         });
     }
 
