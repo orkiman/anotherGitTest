@@ -20,7 +20,7 @@ public class Tables {
             @Override
             public void actionPerformed(ActionEvent e) {
 //                // Append a row
-                model.insertRow(0,new Integer[]{counter++,counter++});
+                model.insertRow(0,new Object[]{counter++,"Or"+counter++});
                 model.setRowCount(5);
 
             }
