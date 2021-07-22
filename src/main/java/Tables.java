@@ -12,6 +12,7 @@ public class Tables {
     public Tables() {
         DefaultTableModel model = new DefaultTableModel();
         table1.setModel(model);
+//        model.setD
 // Create a couple of columns
         model.addColumn("Col1");
         model.addColumn("Col2");
@@ -19,7 +20,7 @@ public class Tables {
             @Override
             public void actionPerformed(ActionEvent e) {
 //                // Append a row
-                model.insertRow(0,new Object[]{counter++,counter++});
+                model.insertRow(0,new Integer[]{counter++,counter++});
                 model.setRowCount(5);
 
             }
