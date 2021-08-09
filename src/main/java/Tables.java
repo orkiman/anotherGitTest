@@ -18,7 +18,10 @@ public class Tables {
         model.addColumn("Col2");
         addToTableButton.addActionListener(e -> {
 //                // Append a row
-            model.insertRow(0, new Object[]{"this is the update on 9/8/21:" +counter++,"Or from work :) "+counter++});
+            if(counter %2==0)
+                model.insertRow(0, new Object[]{"this is the update on 9/8/21:   " +counter++," "});
+            else
+                model.setValueAt(counter++,0,1);
             model.setRowCount(10);
 
         });
