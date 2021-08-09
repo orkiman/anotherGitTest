@@ -19,7 +19,7 @@ public class Tables {
         addToTableButton.addActionListener(e -> {
 //                // Append a row
             if(counter %2==0)
-                model.insertRow(0, new Object[]{"this is the update on 9/8/21:   " +counter++," "});
+                model.insertRow(0, new Object[]{"" +counter++," "});
             else
                 model.setValueAt(counter++,0,1);
             model.setRowCount(10);
