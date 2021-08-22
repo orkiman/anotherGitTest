@@ -22,9 +22,11 @@ public class Tables {
                 model.insertRow(0, new Object[]{"" +counter++," "});
             else
                 model.setValueAt(counter++,0,1);
-            model.setRowCount(10);
+            model.setRowCount(counter/2<10?(counter+1)/2:10);
 
         });
+//        imp. color cells :
+
     }
 
     public static void main(String[] args) {
